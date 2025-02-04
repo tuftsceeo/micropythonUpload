@@ -852,7 +852,7 @@ let firmwareFile2;
         }
 
 
-        fetch('https://raw.githubusercontent.com/tuftsceeo/SPIKE-html/main/Flipper_combi.bin')
+        fetch('https://micropython.org/resources/firmware/LEGO_HUB_NO6-20241129-v1.24.1.dfu')
           .then(response =>
           {
             if (!response.ok)
