@@ -852,7 +852,7 @@ let firmwareFile2;
         }
 
 
-        fetch('https://raw.githubusercontent.com/tuftsceeo/SPIKE-html/main/micropython.dfu')
+        fetch('https://github.com/tuftsceeo/micropythonUpload/raw/refs/heads/main/micropython.dfu')
           .then(response =>
           {
             if (!response.ok)
