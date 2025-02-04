@@ -852,7 +852,7 @@ let firmwareFile2;
         }
 
 
-        fetch('https://micropython.org/resources/firmware/LEGO_HUB_NO6-20241129-v1.24.1.dfu')
+        fetch('https://raw.githubusercontent.com/tuftsceeo/SPIKE-html/main/micropython.dfu')
           .then(response =>
           {
             if (!response.ok)
