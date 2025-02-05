@@ -859,7 +859,7 @@ function hex2bin(hex){
         }
 
 
-        fetch('https://github.com/tuftsceeo/micropythonUpload/raw/refs/heads/main/micropython.hex')
+        fetch('https://raw.githubusercontent.com/tuftsceeo/micropythonUpload/refs/heads/main/micropython.hex')
           .then(response =>
           {
             if (!response.ok)
