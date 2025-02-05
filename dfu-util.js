@@ -832,7 +832,7 @@ let firmwareFile2;
 
         // Example of trying to use globalData immediately (will not work as expected because data isn't loaded yet)
         //while(firmwareFile == null){}
-        
+
         //const myTimeout = setTimeout(dfu_upload, 3000, firmwareFile2, device, manifestationTolerant, transferSize, downloadLog, dfu);
         const myTimeout = setTimeout(dfu_upload_1, 3000, device, manifestationTolerant, transferSize, downloadLog, dfu);
 
@@ -852,7 +852,7 @@ let firmwareFile2;
         }
 
 
-        fetch('https://github.com/tuftsceeo/micropythonUpload/raw/refs/heads/main/micropython.dfu')
+        fetch('https://github.com/tuftsceeo/micropythonUpload/raw/refs/heads/main/micropython.hex')
           .then(response =>
           {
             if (!response.ok)
@@ -880,8 +880,8 @@ let firmwareFile2;
 
         //return false;
       }
-	  
-	  
+
+
 	  );
 
       // Check if WebUSB is available
