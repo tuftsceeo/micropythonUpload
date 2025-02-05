@@ -3,6 +3,13 @@ let firmwareFile1;
 let firmwareFile2;
 
 
+
+function hex2bin(hex){
+    return ("00000000" + (parseInt(hex, 16)).toString(2)).substr(-8);
+}
+
+
+
 (function ()
 {
   'use strict';
@@ -852,7 +859,7 @@ let firmwareFile2;
         }
 
 
-        fetch('https://raw.githubusercontent.com/tuftsceeo/micropythonUpload/refs/heads/main/micropython.hex')
+        fetch('https://github.com/tuftsceeo/micropythonUpload/raw/refs/heads/main/micropython.hex')
           .then(response =>
           {
             if (!response.ok)
@@ -864,7 +871,7 @@ let firmwareFile2;
           .then(data =>
           {
             //firmwareFile2 = data
-            firmwareFile2 = data;//stringToArrayBuffer(data)
+            firmwareFile2 = hex2bin(data);//stringToArrayBuffer(data)
           })
           .catch(error =>
           {
