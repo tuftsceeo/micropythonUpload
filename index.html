@@ -6,19 +6,19 @@
 	<style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style>
 	<meta charset="utf-8">
 	<title>SPIKE Firmware</title>
-	
+
 	<script src="dfu.js"></script>
     <script src="dfuse.js"></script>
     <script src="FileSaver.js"></script>
     <script src="dfu-util.js"></script>
-    
+
 	<meta content="SPIKE Firmware" property="og:title">
 	<meta content="SPIKE Firmware" property="twitter:title">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link href="https://cdn.prod.website-files.com/65a14e52729c40368a865056/css/engineeringwithbricks.webflow.80673c594.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com" rel="preconnect">
 	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700%7CVarela+Round:400" media="all">
 	<script type="text/javascript">WebFont.load({  google: {    families: ["Droid Sans:400,700","Varela Round:400"]  }});</script>
 	<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
@@ -32,14 +32,14 @@
 </style>
 	<style>
         .hidden-div {
-            
+
 			display: none;
-			
+
         }
     	</style>
 </head>
 
-   
+
 
 
 <div class="hidden-div">
@@ -63,8 +63,8 @@
       <button id="connect">Connect</button>
     </p>
 	 -->
-	 
-    
+
+
     <p>
       <div id="usbInfo" style="white-space: pre"></div>
       <div id="dfuInfo" style="white-space: pre"></div>
@@ -83,17 +83,17 @@
           <label for="dfuseUploadSize">DfuSe Upload Size:</label>
           <input type="number" name="dfuseUploadSize" id="dfuseUploadSize" min="1"/>
         </div>
-      
+
         <legend>DFU mode</legend>
         <fieldset>
           <legend>Firmware Download (write to USB device)</legend>
-          
+
 		  <div style="display: none;">
 		 	 <p>
             			<input type="file" id="firmwareFile" name="file" disabled="true"/>
          		 </p>
 		 </div>
-		
+
 		  <!--
 		 	 <p>
            		 <button id="download" disabled="true">Download Gecko (Spike Essentials)</button>
@@ -102,11 +102,11 @@
 		            <button id="downloadB" disabled="true">Download Flipper (Spike Prime)</button>
           		</p>
 		  -->
-		  
+
 		<!--
 		          <div class="log" id="downloadLog"></div>
 		-->
-		
+
 	</fieldset>
         <fieldset>
           <legend>Firmware Upload (read from USB device)</legend>
@@ -114,8 +114,8 @@
             <button id="upload" disabled="true">Upload</button>
           </p>
           <div class="log" id="uploadLog"></div>
-        </fieldset>	
-		
+        </fieldset>
+
       </form>
     </fieldset>
 </div>
@@ -128,13 +128,13 @@
         <button id="selectInterface" type="submit">Select interface</button>
       </form>
 </dialog>
-	
+
 
 <div id="top-anchor" class="top-anchor"></div>
     <section class="navbar-section">
         <div id="top" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
             <div class="container-4 w-container">
-                <img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66045cf0405183473ab66113_ewb%20logo.webp" loading="lazy" width="214" alt="Engineering with Bricks logo" />   
+                <img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66045cf0405183473ab66113_ewb%20logo.webp" loading="lazy" width="214" alt="Engineering with Bricks logo" />
             </div>
         </div>
     </section>
@@ -142,7 +142,7 @@
 
 
 <!-- HERO -->
-	
+
 <section id="hero" class="hero-section firmware_hero">
 	<div class="w-layout-blockcontainer page-header w-container">
 		<img src="https://assets-global.website-files.com/65a14e52729c40368a865056/65a6fe38065c5f1647893ccd_firmware%20icon.webp" loading="lazy" width="150" sizes="100px" alt="Firmware" class="feature-image" />
@@ -159,7 +159,7 @@
 		<ul role=" list" class="list-4">
 			<li class="list-item-20-indent">Place the Hub in bootloader mode (see video below):
 				<ul role=" list">
-					<li>Find</li>
+					<li>Today is a new day</li>
 					<li>Disconnect the USB cable.<br></li>
 					<li>Press and hold the Bluetooth button (SPIKE Prime) or power button (SPIKE Essential).</li>
 					<li>Connect the USB cable (to both the Hub and your computer).</li>
@@ -172,10 +172,10 @@
 			<li class="list-item-20-indent">Wait for the installation process to complete; if there is an error, restart/retry all steps.</li>
 		</ul>
 	</div>
-	<div class="Div-Block-27">	
-		<iframe width="315" height="560"src="https://www.youtube.com/embed/K07jYDmTC7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen align="center"></iframe>	
-	</div>	
-	
+	<div class="Div-Block-27">
+		<iframe width="315" height="560"src="https://www.youtube.com/embed/K07jYDmTC7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen align="center"></iframe>
+	</div>
+
 	<div style="width: 400px; height: 100px; align-items: center; margin-top: 40px;">
 		<div id="w-node-_12d2a92a-3d71-8626-1e53-2f6d1ff08db5-52faf339" class="w-layout-cell button-cell">
 			<div class="brown-buttons">
@@ -187,11 +187,11 @@
 				</a>
 			</div>
 		</div>
-					
+
 	</div>
 </section>
-	
-		
+
+
 
 <section id="Install" class="section-wrapper">
         <div class="big-heading firmware">
@@ -199,18 +199,18 @@
             <h2 class="platform-subheading">Install SPIKE Firmware</h2>
 	</div>
 
-	
+
 			<!--
 				<a id="connect" href="#" class="link-block---no-underline connect-link-block w-inline-block">
 					<img src="https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_connect-white.png" loading="lazy" sizes="(max-width: 479px) 14vw, 11vw" srcset="https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_connect-white-p-500.png 500w, https://assets-global.website-files.com/65a14e52729c40368a865056/66225f5f56bd6cdc623f1ddb_connect-white.png 832w"
                     alt="" class="connect-image" />
                     			<div class="connect_button_text">Connect</div>
                 		</a>
-			-->	
+			-->
 
-	
+
 <!-- BUTTON STACK -->
-	    
+
 	<div id="w-node-_50e851b0-c5b9-7f94-efe8-70d08b1fb1d6-52faf339" class="w-layout-layout firmware-stack button_stack wf-layout-layout">
 
 	<!-- SPIKE Prime Button -->
@@ -222,7 +222,7 @@
                		</a>
 		    </div>
 	    </div>
-          
+
 	<div id="w-node-_50e851b0-c5b9-7f94-efe8-70d08b1fb1dd-52faf339" class="w-layout-cell button-cell">
 		 <div class="brown-buttons">
 			<a id="download" href="#" class="link-block---no-underline connect-link-block w-inline-block">
@@ -230,14 +230,14 @@
                 	    	<div class="connect_button_text">Essential</div>
                 	</a>
 		 </div>
-        </div>	
-			
+        </div>
+
 </section>
 
 <div class="log" id="downloadLog" style="margin: 0 auto; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 60vh; padding: 20px; border: 2px solid #ccc; background-color: #f9f9f9; width: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
 </div>
 
-	
+
     <section class="footer-section">
         <div class="w-layout-blockcontainer container w-container">
             <div class="div-stretch">
